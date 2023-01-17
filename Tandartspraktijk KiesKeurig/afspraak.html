@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="tandarts, afspraak, KiesKeurig, Zwolle">
+        <title>Tandartsafspraak</title>
+    </head>
+    <body style="margin-left: 150px;">
+        <h1>Welkom</h1>
+        <p>
+            Tandartspraktijk KiesKeurig is een van de bekende tandartsen in Zwolle. <br>
+            Door de persoonlijke aandacht van de vriendelijke tandartsen,
+            in combinatie met kundigheid en een ruim scala aan behandelingen zijn patiënten erg tevreden.<br><br>
+            Hieronder kunt u uw afspraak bij Tandartspraktij KiesKeurig vastleggen.<br><br>
+            <img src="afbeeldingen/poetsen.jpg" alt="behandeling" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="afbeeldingen/glimlach.jpg" alt="glimlach" width="300">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <img src="afbeeldingen/behandeling.jpg" alt="poetsen" width="300">
+        </p>
+        <h3>Uw afspraak inplannen</h3>
+        <form id="Inschrijvingsform" action="https://formspree.io/f/xwkjpvwl" method="post">
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+            <table width="600" border="0">
+                <tbody>
+                    <tr>
+                        <td><label for="naam">Naam:</label></td>
+                        <td><input type="text" id="naam" name="voornaam" placeholder="Voornaam"></td>
+                        <td><input type="text" name="achternaam" placeholder="Achternaam"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="adres">Adresgegevens:</label></td>
+                        <td><input type="text" id="adres" name="straatnaam_huisnummer" placeholder="Straat en huisnummer"></td>
+                        <td><input type="text" name="postcode_woonplaats" placeholder="Postcode en woonplaats"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="geboortedatum">Geboortedatum:</label></td>
+                        <td><input type="date" id="geboortedatum" name="geboortedatum" min="1920-01-01" max="2018-01-01"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="BSN">Burger Service Nummer:</label></td>
+                        <td><input type="number" id="BSN" name="BSN" min="000000000" max="999999999" placeholder="Burgerservicenummer"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ziektekostenverzekering">Ziektekostenverzekering:</label></td>
+                        <td><input type="text" id="ziektekostenverzekering" name="ziektekostenverzekering" placeholder="Naam verzekering"></td>
+                        <td><input type="number" id="nummer_verzekering" name="verzekeringsnummer" placeholder="Verzekeringsnummer"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Beschrijving van de klacht(en)</legend>
+            <input type="checkbox" name="klachten" value="jaarlijkse controle">jaarlijkse controle<br>
+            <input type="checkbox" name="klachten" value="kiespijn">kiespijn<br>
+            <input type="checkbox" name="klachten" value="tand afgebroken">tand afgebroken<br>
+            <input type="checkbox" name="klachten" value="kaakpijn">kaakpijn<br>
+            <input type="checkbox" name="klachten" value="kroon verloren">kroon verloren<br>
+            <input type="checkbox" name="klachten" value="beugel zit los">beugel zit los<br>
+            <input type="checkbox" name="klachten" value="tand zit los">tand zit los<br>
+            <input type="checkbox" name="klachten" value="gaatjes">gaatjes <br><br>
+            <label for="foto">Voeg eventueel een foto van de klacht(en) toe:</label>
+            <input type="file" id="foto" name="foto van klacht"><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Toelichting van uw klacht(en)</legend><br>
+                <textarea name="beschrijving klachten" maxlength="1500" placeholder="Omschrijf hier uw klachten"></textarea><br><br>
+            <label for="afspraakdatum">Voorkeur datum afspraak:</label>
+            <input type="date" id="afspraakdatum" name="afspraakdatum">
+        </fieldset>
+        <br>
+        <button type="submit" name="Verzendknop">
+        <strong>Verstuur</strong></button>
+    </form>
+    </body>
+</html>
